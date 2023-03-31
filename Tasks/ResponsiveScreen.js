@@ -40,6 +40,8 @@ const styles = StyleSheet.create({
     width: wp("80%"),
     backgroundColor: "#222",
     paddingHorizontal: wp("2%"),
+    justifyContent: "center",
+    alignItems: "center",
   },
   square: {
     height: hp("10%"),

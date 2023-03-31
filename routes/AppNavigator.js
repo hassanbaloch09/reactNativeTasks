@@ -5,12 +5,14 @@ import Login from "../screens/Login";
 import Home from "../screens/Home";
 import Counter from "../Tasks/Counter";
 import ResponsiveScreen from "../Tasks/ResponsiveScreen";
+import Fonts from "../Tasks/Fonts";
 
 const { Navigator, Screen } = createStackNavigator();
 
 function AppNavigation(props) {
   return (
     <Navigator screenOptions={{ headerShown: false }}>
+      <Screen name="Fonts" component={Fonts} />
       <Screen name="ResponsiveScreen" component={ResponsiveScreen} />
       <Screen name="Counter" component={Counter} />
       <Screen name="Home" component={Home} />
