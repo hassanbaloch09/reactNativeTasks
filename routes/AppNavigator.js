@@ -6,12 +6,14 @@ import Home from "../screens/Home";
 import Counter from "../Tasks/Counter";
 import ResponsiveScreen from "../Tasks/ResponsiveScreen";
 import Fonts from "../Tasks/Fonts";
+import MyBox from "../Tasks/MyBox";
 
 const { Navigator, Screen } = createStackNavigator();
 
 function AppNavigation(props) {
   return (
     <Navigator screenOptions={{ headerShown: false }}>
+      <Screen name="MyBox" component={MyBox} />
       <Screen name="Fonts" component={Fonts} />
       <Screen name="ResponsiveScreen" component={ResponsiveScreen} />
       <Screen name="Counter" component={Counter} />
