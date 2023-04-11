@@ -13,10 +13,10 @@ const { Navigator, Screen } = createStackNavigator();
 function AppNavigation(props) {
   return (
     <Navigator screenOptions={{ headerShown: false }}>
+      <Screen name="Counter" component={Counter} />
       <Screen name="MyBox" component={MyBox} />
       <Screen name="Fonts" component={Fonts} />
       <Screen name="ResponsiveScreen" component={ResponsiveScreen} />
-      <Screen name="Counter" component={Counter} />
       <Screen name="Home" component={Home} />
       <Screen name="Login" component={Login} />
     </Navigator>
