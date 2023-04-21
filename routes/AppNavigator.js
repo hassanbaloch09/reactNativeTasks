@@ -7,12 +7,14 @@ import Counter from "../Tasks/Counter";
 import ResponsiveScreen from "../Tasks/ResponsiveScreen";
 import Fonts from "../Tasks/Fonts";
 import MyBox from "../Tasks/MyBox";
+import Shuffle from "../Tasks/Shuffle";
 
 const { Navigator, Screen } = createStackNavigator();
 
 function AppNavigation(props) {
   return (
     <Navigator screenOptions={{ headerShown: false }}>
+      <Screen name="Shuffle" component={Shuffle} />
       <Screen name="Counter" component={Counter} />
       <Screen name="MyBox" component={MyBox} />
       <Screen name="Fonts" component={Fonts} />
