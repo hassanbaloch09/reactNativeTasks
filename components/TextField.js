@@ -18,6 +18,8 @@ const TextField = (props) => {
           style={styles.input}
           placeholder={props.placeholder}
           secureTextEntry={props?.secureTextEntry}
+          value={props?.value}
+          onChangeText={props?.onChangeText}
         />
         {props?.password ? (
           <TouchableOpacity onPress={props.onPress}>

@@ -8,8 +8,9 @@ import ResponsiveScreen from "../Tasks/ResponsiveScreen";
 import Fonts from "../Tasks/Fonts";
 import MyBox from "../Tasks/MyBox";
 import Shuffle from "../Tasks/Shuffle";
-import Login from "../Tasks/Login";
-import SignUp from "../Tasks/SignUp";
+import Login from "../screens/Authentication/Login";
+import SignUp from "../screens/Authentication/SignUp";
+import Dashboard from "../screens/Authentication/Dashboard";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -18,6 +19,7 @@ function AppNavigation(props) {
     <Navigator screenOptions={{ headerShown: false }}>
       <Screen name="Login" component={Login} />
       <Screen name="SignUp" component={SignUp} />
+      <Screen name="Dashboard" component={Dashboard} />
       <Screen name="Shuffle" component={Shuffle} />
       <Screen name="Counter" component={Counter} />
       <Screen name="MyBox" component={MyBox} />

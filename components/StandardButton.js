@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import {
   heightPercentageToDP as hp,
@@ -9,8 +9,16 @@ import { TouchableOpacity } from "react-native";
 
 const StandardButton = (props) => {
   return (
-    <TouchableOpacity style={styles.container} onPress={props.onPress}>
-      <Text style={styles.buttonText}>{props.title}</Text>
+    <TouchableOpacity
+      disabled={props?.loading ? true : false}
+      style={styles.container}
+      onPress={props.onPress}
+    >
+      {props.loading ? (
+        <ActivityIndicator size="small" color="#fff" />
+      ) : (
+        <Text style={styles.buttonText}>{props.title}</Text>
+      )}
     </TouchableOpacity>
   );
 };
