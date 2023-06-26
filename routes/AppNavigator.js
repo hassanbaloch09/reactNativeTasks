@@ -11,12 +11,14 @@ import Shuffle from "../Tasks/Shuffle";
 import Login from "../screens/Authentication/Login";
 import SignUp from "../screens/Authentication/SignUp";
 import Dashboard from "../screens/Authentication/Dashboard";
+import SearchFilter from "../Tasks/SearchFilter";
 
 const { Navigator, Screen } = createStackNavigator();
 
 function AppNavigation(props) {
   return (
     <Navigator screenOptions={{ headerShown: false }}>
+      <Screen name="SearchFilter" component={SearchFilter} />
       <Screen name="Login" component={Login} />
       <Screen name="SignUp" component={SignUp} />
       <Screen name="Dashboard" component={Dashboard} />
