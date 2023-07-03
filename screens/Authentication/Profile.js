@@ -2,16 +2,16 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import BottomMenu from "../../components/BottomMenu";
 
-const Dashboard = (props) => {
+const Profile = (props) => {
   return (
     <View style={styles.container}>
-      <Text style={{ color: "#fff" }}>Dashboard</Text>
-      <BottomMenu navigation={props?.navigation} active="home" />
+      <Text style={{ color: "#fff" }}>Profile</Text>
+      <BottomMenu navigation={props?.navigation} active="profile" />
     </View>
   );
 };
 
-export default Dashboard;
+export default Profile;
 
 const styles = StyleSheet.create({
   container: {
